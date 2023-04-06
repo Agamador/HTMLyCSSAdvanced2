@@ -1,27 +1,39 @@
 <!DOCTYPE html>
+<html lang="es">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estatua del Minotauro de Jerez de la Frontera</title>
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <script src="./assets/scripts/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#inicio">Inicio</a></li>
+        <li class="nav__item"><a class="nav__link" href="#historia">Historia</a></li>
+        <li class="nav__item"><a class="nav__link" href="#datos-curiosos">Datos curiosos</a></li>
+        <li class="nav__item"><a class="nav__link" href="#como-llegar">Cómo llegar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="inicio" class="section section--inicio">
+      <include src="./views/inicio.html"></include>
+    </section>
+    <section id="historia" class="section section--historia">
+      <include src="./views/historia.html"></include>
+    </section>
+    <section id="datos-curiosos" class="section section--datos-curiosos">
+      <include src="./views/datos-curiosos.html"></include>
+    </section>
+    <section id="como-llegar" class="section section--como-llegar">
+      <include src="./views/como-llegar.html"></include>
+    </section>
+  </main>
+</body>
+
 </html>

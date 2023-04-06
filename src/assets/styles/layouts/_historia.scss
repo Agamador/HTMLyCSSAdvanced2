@@ -1,0 +1,32 @@
+.historia {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-color;
+        flex-wrap: wrap;
+    }
+
+    &__image {
+        max-height: 50vh;
+        max-width: 90%;
+    }
+    &__text-container {
+        max-width: 60%;
+        text-align: left;
+        margin: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+}

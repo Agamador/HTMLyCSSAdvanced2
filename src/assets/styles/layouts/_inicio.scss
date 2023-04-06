@@ -1,0 +1,36 @@
+.inicio {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    width: auto;
+    max-height: 50vh;
+    max-width: 90%;
+  }
+
+  &__text-container {
+    max-width: 60%;
+    text-align: left;
+    margin: 30px;
+  }
+
+  &__link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    transition: border-color 0.2s ease-in-out;
+  }
+
+  &__link:hover {
+    border-color: $link-color;
+    color: $link-color;
+  }
+}
